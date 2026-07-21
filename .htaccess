@@ -1,0 +1,68 @@
+#  We Trail (Pvt) Ltd - Apache Configuration
+
+# Custom error pages
+ErrorDocument 404 /404.php
+ErrorDocument 403 /404.php
+
+# REDIRECTS
+
+# Redirect old .html pages to .php equivalents
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /
+
+    # Force canonical production host over HTTPS only on the live domain
+    # Skip local development hosts such as localhost / 127.0.0.1
+    RewriteCond %{HTTP_HOST} !^(localhost|127\.0\.0\.1)(:\d+)?$ [NC]
+    RewriteCond %{HTTP_HOST} ^(?:www\.)?wetrail\.lk$ [NC]
+    RewriteCond %{HTTPS} !=on [OR]
+    RewriteCond %{HTTP_HOST} ^www\.wetrail\.lk$ [NC]
+    RewriteRule ^ https://wetrail.lk%{REQUEST_URI} [R=301,L]
+
+    # Block direct web access to internal app directories
+    RewriteRule ^(?:config|includes|database)/ - [F,L,NC]
+
+    RewriteRule ^villa\.html$ villa.php [R=301,L]
+    RewriteRule ^services\.html$ services.php [R=301,L]
+    RewriteRule ^tours\.html$ tours.php [R=301,L]
+    RewriteRule ^gallery\.html$ gallery.php [R=301,L]
+    RewriteRule ^privacy-policy\.html$ privacy-policy.php [R=301,L]
+    RewriteRule ^index\.html$ index.php [R=301,L]
+
+    # Serve sitemap.php when sitemap.xml is requested
+    RewriteRule ^sitemap\.xml$ sitemap.php [L]
+</IfModule>
+
+# PERFORMANCE
+
+# Enable gzip compression
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/css application/javascript
+    AddOutputFilterByType DEFLATE application/json text/xml image/svg+xml
+</IfModule>
+
+# Browser caching
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType image/jpeg        "access plus 1 month"
+    ExpiresByType image/png         "access plus 1 month"
+    ExpiresByType image/webp        "access plus 1 month"
+    ExpiresByType image/svg+xml     "access plus 1 month"
+    ExpiresByType text/css          "access plus 1 week"
+    ExpiresByType application/javascript "access plus 1 week"
+    ExpiresByType text/html         "access plus 1 hour"
+</IfModule>
+
+# SECURITY
+
+# Hide server version info
+ServerSignature Off
+
+# Prevent directory listing
+Options -Indexes
+
+# Prevent access to hidden files (.htaccess, .env, etc.)
+<FilesMatch "^\.">
+    Order allow,deny
+    Deny from all
+</FilesMatch>

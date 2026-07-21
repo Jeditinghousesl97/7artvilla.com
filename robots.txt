@@ -1,0 +1,15 @@
+User-agent: *
+Allow: /
+
+# Block admin panel from all crawlers
+Disallow: /admin/
+
+# Block utility / handler files
+Disallow: /send-inquiry.php
+Disallow: /send-tour-inquiry.php
+Disallow: /maintenance.php
+Disallow: /config/
+Disallow: /includes/
+
+# Sitemap location
+Sitemap: https://wetrail.lk/sitemap.xml

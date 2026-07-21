@@ -1,0 +1,8 @@
+# Block directory listing
+Options -Indexes
+
+# Block direct access to setup/bootstrap scripts
+<Files "setup.php">
+    Order allow,deny
+    Deny from all
+</Files>
