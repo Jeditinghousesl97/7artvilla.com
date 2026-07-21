@@ -1,10 +1,10 @@
 <?php
-$page_title       = 'Privacy Policy | We Trail (Pvt) Ltd';
-$page_description = 'Privacy Policy and Terms of Use for We Trail (Pvt) Ltd, Panama, Sri Lanka.';
-$og_title         = 'Privacy Policy | We Trail (Pvt) Ltd';
-$og_description   = 'Privacy Policy and Terms of Use for We Trail (Pvt) Ltd, Panama, Sri Lanka.';
-$og_url           = 'https://wetrail.lk/privacy-policy.php';
-$og_image         = 'https://wetrail.lk/assets/images/villa/resort.jpg';
+$page_title       = 'Privacy Policy | 7 Art Villa';
+$page_description = 'Privacy Policy and Terms of Use for 7 Art Villa, Ella, Sri Lanka.';
+$og_title         = 'Privacy Policy | 7 Art Villa';
+$og_description   = 'Privacy Policy and Terms of Use for 7 Art Villa, Ella, Sri Lanka.';
+$og_url           = 'https://7artvilla.com/privacy-policy.php';
+$og_image         = 'https://7artvilla.com/assets/images/logo.png';
 $page_css         = 'policy.css';
 $page_js          = 'policy.js';
 $navbar_class     = 'scrolled';
@@ -55,7 +55,7 @@ include 'includes/header.php';
                         <i class="fas fa-envelope"></i>
                         <h4>Questions?</h4>
                         <p>Contact us regarding any privacy concerns.</p>
-                        <a href="mailto:info@wetrail.lk" class="btn btn-gold">Email Us</a>
+                        <a href="mailto:info@7artvilla.com" class="btn btn-gold">Email Us</a>
                     </div>
                 </aside>
 
@@ -64,8 +64,8 @@ include 'includes/header.php';
 
                     <section id="introduction" class="policy-section">
                         <h2><span class="policy-num">01</span> Introduction</h2>
-                        <p>Welcome to <strong>We Trail (Pvt) Ltd</strong> ("we," "us," or "our"), a travel and hospitality brand based in Panama, Sri Lanka. We are committed to protecting your personal information and your right to privacy.</p>
-                        <p>This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website <strong>wetrail.lk</strong> or contact us through any channel. Please read this policy carefully. If you disagree with its terms, please discontinue use of our site.</p>
+                        <p>Welcome to <strong>7 Art Villa</strong> ("we," "us," or "our"), an eco villa based in Ella, Sri Lanka. We are committed to protecting your personal information and your right to privacy.</p>
+                        <p>This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website <strong>7artvilla.com</strong> or contact us through any channel. Please read this policy carefully. If you disagree with its terms, please discontinue use of our site.</p>
                         <div class="policy-highlight">
                             <i class="fas fa-shield-alt"></i>
                             <p>We will never sell, trade, or rent your personal information to third parties for marketing purposes.</p>
@@ -124,7 +124,7 @@ include 'includes/header.php';
                         <ul class="policy-list">
                             <li><i class="fas fa-check"></i><span><strong>Service Providers:</strong> Trusted partners who assist in operating our website or conducting our business (e.g., web hosting), who are bound by confidentiality agreements.</span></li>
                             <li><i class="fas fa-check"></i><span><strong>Legal Requirements:</strong> When disclosure is required by law, court order, or governmental authority in Sri Lanka.</span></li>
-                            <li><i class="fas fa-check"></i><span><strong>Protection of Rights:</strong> To protect the safety, rights, or property of We Trail (Pvt) Ltd, our guests, or the public.</span></li>
+                            <li><i class="fas fa-check"></i><span><strong>Protection of Rights:</strong> To protect the safety, rights, or property of 7 Art Villa, our guests, or the public.</span></li>
                             <li><i class="fas fa-check"></i><span><strong>Business Transfer:</strong> In the unlikely event of a merger or acquisition, your information may be transferred, subject to the same protections outlined in this policy.</span></li>
                         </ul>
                     </section>
@@ -180,7 +180,7 @@ include 'includes/header.php';
                             <li><i class="fas fa-check"></i><span><strong>Right to Restriction:</strong> Request that we restrict processing of your information in certain circumstances.</span></li>
                             <li><i class="fas fa-check"></i><span><strong>Right to Object:</strong> Object to our processing of your personal data for certain purposes.</span></li>
                         </ul>
-                        <p>To exercise any of these rights, please contact us at <a href="mailto:info@wetrail.lk">info@wetrail.lk</a>. We will respond to your request within <strong>30 days</strong>.</p>
+                        <p>To exercise any of these rights, please contact us at <a href="mailto:info@7artvilla.com">info@7artvilla.com</a>. We will respond to your request within <strong>30 days</strong>.</p>
                     </section>
 
                     <section id="third-party" class="policy-section">
@@ -203,7 +203,7 @@ include 'includes/header.php';
                         <h2><span class="policy-num">10</span> Terms of Use</h2>
 
                         <h3>Acceptance of Terms</h3>
-                        <p>By accessing and using the We Trail (Pvt) Ltd website, you accept and agree to be bound by these Terms of Use. If you do not agree, please do not use this website.</p>
+                        <p>By accessing and using the 7 Art Villa website, you accept and agree to be bound by these Terms of Use. If you do not agree, please do not use this website.</p>
 
                         <h3>Use of the Website</h3>
                         <ul class="policy-list">
@@ -213,13 +213,13 @@ include 'includes/header.php';
                         </ul>
 
                         <h3>Intellectual Property</h3>
-                        <p>All content on this website, including text, images, logos, graphics, and design, is the property of We Trail (Pvt) Ltd or its content suppliers and is protected by applicable intellectual property laws. Reproduction, distribution, or use without prior written permission is strictly prohibited.</p>
+                        <p>All content on this website, including text, images, logos, graphics, and design, is the property of 7 Art Villa or its content suppliers and is protected by applicable intellectual property laws. Reproduction, distribution, or use without prior written permission is strictly prohibited.</p>
 
                         <h3>Disclaimer of Warranties</h3>
                         <p>This website and its content are provided "as is" without warranty of any kind, express or implied. We do not warrant that the website will be uninterrupted, error-free, or free of viruses or other harmful components.</p>
 
                         <h3>Limitation of Liability</h3>
-                        <p>To the fullest extent permitted by law, We Trail (Pvt) Ltd shall not be liable for any indirect, incidental, special, or consequential damages arising from your use of this website or inability to access it.</p>
+                        <p>To the fullest extent permitted by law, 7 Art Villa shall not be liable for any indirect, incidental, special, or consequential damages arising from your use of this website or inability to access it.</p>
 
                         <h3>Governing Law</h3>
                         <p>These terms are governed by and construed in accordance with the laws of the <strong>Democratic Socialist Republic of Sri Lanka</strong>. Any disputes arising from these terms shall be subject to the exclusive jurisdiction of the courts of Sri Lanka.</p>
@@ -238,29 +238,29 @@ include 'includes/header.php';
                             <div class="policy-contact-row">
                                 <i class="fas fa-building"></i>
                                 <div>
-                                    <strong>We Trail (Pvt) Ltd</strong>
-                                    <span>Panama, Sri Lanka</span>
+                                    <strong>7 Art Villa</strong>
+                                    <span>Ella, Sri Lanka</span>
                                 </div>
                             </div>
                             <div class="policy-contact-row">
                                 <i class="fas fa-envelope"></i>
                                 <div>
                                     <strong>Email</strong>
-                                    <a href="mailto:info@wetrail.lk">info@wetrail.lk</a>
+                                    <a href="mailto:info@7artvilla.com">info@7artvilla.com</a>
                                 </div>
                             </div>
                             <div class="policy-contact-row">
                                 <i class="fas fa-phone-alt"></i>
                                 <div>
                                     <strong>Phone</strong>
-                                    <a href="tel:+94777388810">+94 777 388810</a>
+                                    <a href="tel:+94773870850">077 387 0850</a>
                                 </div>
                             </div>
                             <div class="policy-contact-row">
                                 <i class="fas fa-map-marker-alt"></i>
                                 <div>
                                     <strong>Location</strong>
-                                    <a href="https://www.google.com/maps/search/?api=1&query=Panama%2C%20Sri%20Lanka" target="_blank" rel="noopener">View on Google Maps</a>
+                                    <a href="https://www.google.com/maps/search/?api=1&query=Ella%2C%20Sri%20Lanka" target="_blank" rel="noopener">View on Google Maps</a>
                                 </div>
                             </div>
                         </div>

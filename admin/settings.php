@@ -203,7 +203,7 @@ $is_maintenance = ($rows['maintenance_mode'] ?? '0') === '1';
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Settings | We Trail Admin</title>
+    <title>Settings | 7 Art Villa Admin</title>
     <meta name="robots" content="noindex, nofollow">
     <link rel="icon" type="image/png" href="../assets/images/logo.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -341,7 +341,7 @@ $is_maintenance = ($rows['maintenance_mode'] ?? '0') === '1';
                         <div class="form-group form-full">
                             <label>Paragraph 1</label>
                             <textarea name="about_paragraph1" rows="3"
-                                      placeholder="Nestled in the lush landscapes of Panama..."><?php echo htmlspecialchars($rows['about_paragraph1'] ?? ''); ?></textarea>
+                                      placeholder="Nestled in the lush landscapes of Ella..."><?php echo htmlspecialchars($rows['about_paragraph1'] ?? ''); ?></textarea>
                         </div>
                         <div class="form-group form-full">
                             <label>Paragraph 2</label>
@@ -593,7 +593,7 @@ $is_maintenance = ($rows['maintenance_mode'] ?? '0') === '1';
                                 <i class="fas fa-phone"></i>
                                 <input type="text" name="phone"
                                        value="<?php echo htmlspecialchars($rows['phone'] ?? ''); ?>"
-                                       placeholder="+94777388810">
+                                       placeholder="077 387 0850">
                             </div>
                             <span class="form-hint">Displayed in footer and contact section. Include country code.</span>
                         </div>
@@ -603,9 +603,9 @@ $is_maintenance = ($rows['maintenance_mode'] ?? '0') === '1';
                                 <i class="fab fa-whatsapp"></i>
                                 <input type="text" name="whatsapp"
                                        value="<?php echo htmlspecialchars($rows['whatsapp'] ?? ''); ?>"
-                                       placeholder="94777388810">
+                                       placeholder="94773870850">
                             </div>
-                            <span class="form-hint">Digits only, no spaces (e.g. 94777388810).</span>
+                            <span class="form-hint">Digits only, no spaces (e.g. 94773870850).</span>
                         </div>
                         <div class="form-group form-full">
                             <label>Email Address</label>
@@ -613,7 +613,7 @@ $is_maintenance = ($rows['maintenance_mode'] ?? '0') === '1';
                                 <i class="fas fa-envelope"></i>
                                 <input type="email" name="email"
                                        value="<?php echo htmlspecialchars($rows['email'] ?? ''); ?>"
-                                       placeholder="info@wetrail.lk">
+                                       placeholder="info@7artvilla.com">
                             </div>
                             <span class="form-hint">Displayed in footer and used in inquiry reply links.</span>
                         </div>
@@ -814,7 +814,7 @@ $is_maintenance = ($rows['maintenance_mode'] ?? '0') === '1';
                         <div class="form-group">
                             <label>Homepage Meta Description</label>
                             <textarea name="site_meta_description" rows="3"
-                                      placeholder="A fully private modern A-Frame eco resort near Panama Beach, Panama. Designed for couples and families seeking privacy, nature, and luxury."><?php echo htmlspecialchars($rows['site_meta_description'] ?? ''); ?></textarea>
+                                      placeholder="A peaceful eco villa in Ella, Sri Lanka, created for guests seeking privacy, nature, and serenity."><?php echo htmlspecialchars($rows['site_meta_description'] ?? ''); ?></textarea>
                             <span class="form-hint">Shown in Google search results. Aim for 150-160 characters. <span id="metaCount" style="color:var(--gold)"></span></span>
                         </div>
                     </div>
@@ -909,8 +909,8 @@ $is_maintenance = ($rows['maintenance_mode'] ?? '0') === '1';
                             <div class="input-with-icon">
                                 <i class="fas fa-signature"></i>
                                 <input type="text" name="smtp_from_name"
-                                       value="<?php echo htmlspecialchars($rows['smtp_from_name'] ?? 'We Trail (Pvt) Ltd'); ?>"
-                                       placeholder="We Trail (Pvt) Ltd">
+                                       value="<?php echo htmlspecialchars($rows['smtp_from_name'] ?? '7 Art Villa'); ?>"
+                                       placeholder="7 Art Villa">
                             </div>
                         </div>
                         <div class="form-group">

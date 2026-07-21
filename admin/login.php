@@ -83,7 +83,7 @@ $__ts_login = turnstile_get_settings();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin Login | We Trail (Pvt) Ltd</title>
+    <title>Admin Login | 7 Art Villa</title>
     <meta name="robots" content="noindex, nofollow">
     <link rel="icon" type="image/png" href="../assets/images/logo.png">
     <meta name="theme-color" content="#1a1a1a">
@@ -110,9 +110,9 @@ $__ts_login = turnstile_get_settings();
 
             <!-- Logo -->
             <div class="login-logo">
-                <img src="../assets/images/logo.png" alt="We Trail (Pvt) Ltd">
+                <img src="../assets/images/logo.png" alt="7 Art Villa">
                 <div class="login-logo-text">
-                    <span class="login-resort-name">We Trail</span>
+                    <span class="login-resort-name">7 Art Villa</span>
                     <span class="login-portal-label">Admin Portal</span>
                 </div>
             </div>
@@ -195,7 +195,7 @@ $__ts_login = turnstile_get_settings();
 
         <!-- Bottom credit -->
         <p class="login-credit">
-            &copy; <?php echo date('Y'); ?> We Trail (Pvt) Ltd
+            &copy; <?php echo date('Y'); ?> 7 Art Villa
         </p>
 
     </div>

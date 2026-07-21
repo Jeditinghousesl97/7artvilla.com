@@ -36,7 +36,7 @@ $tiers = $pdo->query('SELECT * FROM villa_pricing ORDER BY sort_order ASC, id AS
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Villa Pricing | We Trail Admin</title>
+    <title>Villa Pricing | 7 Art Villa Admin</title>
     <meta name="robots" content="noindex, nofollow">
     <link rel="icon" type="image/png" href="../assets/images/logo.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">

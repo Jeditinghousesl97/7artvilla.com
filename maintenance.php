@@ -7,8 +7,8 @@ http_response_code(503);
 header('Retry-After: 3600');
 
 $message    = 'We\'re currently performing scheduled maintenance. We\'ll be back shortly. Thank you for your patience.';
-$wa_number  = '94777388810';
-$contact_email = 'info@wetrail.lk';
+$wa_number  = '94773870850';
+$contact_email = 'info@7artvilla.com';
 $theme = site_theme_defaults();
 
 try {
@@ -27,7 +27,7 @@ try {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Under Maintenance | We Trail (Pvt) Ltd</title>
+    <title>Under Maintenance | 7 Art Villa</title>
     <meta name="robots" content="noindex, nofollow">
     <meta name="theme-color" content="<?php echo htmlspecialchars($theme['theme_green']); ?>">
     <link rel="icon" type="image/png" href="assets/images/logo.png">
@@ -75,7 +75,8 @@ try {
         }
 
         .logo img {
-            height: 64px;
+            height: 90px;
+            width: auto;
             margin-bottom: 28px;
         }
 
@@ -146,7 +147,7 @@ try {
 
     <div class="card">
         <div class="logo">
-            <img src="assets/images/logo.png" alt="We Trail (Pvt) Ltd">
+            <img src="assets/images/logo.png" alt="7 Art Villa">
         </div>
 
         <div class="icon-wrap">
@@ -167,7 +168,7 @@ try {
             </a>
         </div>
 
-        <p class="footer-note">We Trail (Pvt) Ltd &mdash; Panama, Sri Lanka</p>
+        <p class="footer-note">7 Art Villa &mdash; Ella, Sri Lanka</p>
     </div>
 
 </body>

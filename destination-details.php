@@ -75,12 +75,12 @@ if ($not_found) {
     http_response_code(404);
     $page_robots = 'noindex, nofollow';
 }
-$page_title = $not_found ? 'Destination Not Found | We Trail (Pvt) Ltd' : ($destination['title'] . ' | Destination | We Trail (Pvt) Ltd');
+$page_title = $not_found ? 'Destination Not Found | 7 Art Villa' : ($destination['title'] . ' | Destination | 7 Art Villa');
 $page_description = $not_found ? 'The requested destination could not be found.' : trim((string)($destination['short_summary'] ?: destination_meta_excerpt((string)$destination['description'], 155, '...')));
 $og_title = $page_title;
 $og_description = $page_description;
-$og_url = 'https://wetrail.lk/destination-details.php' . ($slug !== '' ? ('?slug=' . urlencode($slug)) : '');
-$og_image = (!$not_found && !empty($destination['featured_image_path'])) ? ('https://wetrail.lk/' . ltrim($destination['featured_image_path'], '/')) : 'https://wetrail.lk/assets/images/villa/resort.jpg';
+$og_url = 'https://7artvilla.com/destination-details.php' . ($slug !== '' ? ('?slug=' . urlencode($slug)) : '');
+$og_image = (!$not_found && !empty($destination['featured_image_path'])) ? ('https://7artvilla.com/' . ltrim($destination['featured_image_path'], '/')) : 'https://7artvilla.com/assets/images/logo.png';
 $page_css = 'tour-details.css';
 $page_js = 'tour-details.js';
 $nav_base = 'index.php';

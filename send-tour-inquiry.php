@@ -83,7 +83,7 @@ try {
     $stmt->execute();
     $s = $stmt->fetchAll(PDO::FETCH_KEY_PAIR);
     $notify_email = $s['smtp_notify_email'] ?? $s['email'] ?? '';
-    $resort_name  = $s['smtp_from_name'] ?? 'We Trail (Pvt) Ltd';
+    $resort_name  = $s['smtp_from_name'] ?? '7 Art Villa';
     $contact_email = $s['email'] ?? '';
     $contact_phone = $s['phone'] ?? '';
     $contact_whatsapp = $s['whatsapp'] ?? '';

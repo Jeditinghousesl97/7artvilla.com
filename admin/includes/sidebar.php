@@ -6,9 +6,9 @@ $current = basename($_SERVER['PHP_SELF']);
 
     <!-- Logo -->
     <div class="sidebar-logo">
-        <img src="../assets/images/logo.png" alt="We Trail">
+        <img src="../assets/images/logo.png" alt="7 Art Villa">
         <div class="sidebar-logo-text">
-            <span class="sidebar-resort">We Trail</span>
+            <span class="sidebar-resort">7 Art Villa</span>
             <span class="sidebar-panel">Admin Panel</span>
         </div>
     </div>

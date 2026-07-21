@@ -1,9 +1,9 @@
 <?php
-$page_title       = 'We Trail (Pvt) Ltd | Panama, Sri Lanka';
-$page_description = 'Private stays, curated excursions, and nature-led Sri Lankan experiences from Panama. Immerse Yourself in the Essence of Sri Lanka.';
-$og_title         = 'We Trail (Pvt) Ltd | Immerse Yourself in the Essence of Sri Lanka';
-$og_url           = 'https://wetrail.lk/';
-$og_image         = 'https://wetrail.lk/assets/images/villa/resort.jpg';
+$page_title       = '7 Art Villa | Eco Villa in Ella, Sri Lanka';
+$page_description = 'Discover 7 Art Villa, a peaceful eco villa in Ella, Sri Lanka. Breath of Serenity.';
+$og_title         = '7 Art Villa | Breath of Serenity';
+$og_url           = 'https://7artvilla.com/';
+$og_image         = 'https://7artvilla.com/assets/images/logo.png';
 $nav_base         = ''; // homepage - use hash links in navbar
 
 // Load settings from DB
@@ -40,10 +40,10 @@ try {
     $__s    = $__st->fetchAll(PDO::FETCH_KEY_PAIR);
 
     $hero_image       = $__s['hero_image']         ?? '';
-    $about_label      = $__s['about_label']        ?? 'About We Trail';
-    $about_heading    = $__s['about_heading']       ?? 'Immerse Yourself in the Essence of Sri Lanka';
-    $about_p1         = $__s['about_paragraph1']    ?? 'We Trail (Pvt) Ltd is a Sri Lankan travel and stay brand based in Panama, creating private escapes with thoughtful hospitality, local insight, and a strong connection to nature.';
-    $about_p2         = $__s['about_paragraph2']    ?? 'From peaceful time near Panama Beach to curated journeys across the island, every experience is designed to feel personal, unhurried, and deeply rooted in Sri Lanka.';
+    $about_label      = $__s['about_label']        ?? 'About 7 Art Villa';
+    $about_heading    = $__s['about_heading']       ?? 'Breath of Serenity';
+    $about_p1         = $__s['about_paragraph1']    ?? '7 Art Villa is an eco villa in Ella, Sri Lanka, offering a peaceful retreat shaped by thoughtful hospitality and a close connection to nature.';
+    $about_p2         = $__s['about_paragraph2']    ?? 'Surrounded by Ella\'s fresh mountain air and lush scenery, every stay is designed to feel private, unhurried, and restorative.';
     $about_stats      = [
         ['number' => $__s['about_stat1_number'] ?? '100%', 'label' => $__s['about_stat1_label'] ?? 'Private'],
         ['number' => $__s['about_stat2_number'] ?? '1',    'label' => $__s['about_stat2_label'] ?? 'Exclusive Villa'],
@@ -53,22 +53,22 @@ try {
     $about_img_accent = $__s['about_image_accent'] ?? '';
 
     // Contact / social
-    $idx_phone    = $__s['phone']        ?? '+94777388810';
-    $idx_email    = $__s['email']        ?? 'info@wetrail.lk';
-    $idx_wa       = $__s['whatsapp']     ?? '94777388810';
+    $idx_phone    = $__s['phone']        ?? '077 387 0850';
+    $idx_email    = $__s['email']        ?? 'info@7artvilla.com';
+    $idx_wa       = $__s['whatsapp']     ?? '94773870850';
     $idx_facebook = $__s['facebook']     ?? '';
     $idx_instagram= $__s['instagram']   ?? '';
     $idx_youtube  = $__s['youtube']     ?? '';
     $idx_tiktok   = $__s['tiktok']      ?? '';
     $idx_tripadvisor=$__s['tripadvisor'] ?? '';
     $idx_twitter  = $__s['twitter']     ?? '';
-    $idx_maps       = $__s['maps_url']       ?? 'https://www.google.com/maps/search/?api=1&query=Panama%2C%20Sri%20Lanka';
+    $idx_maps       = $__s['maps_url']       ?? 'https://www.google.com/maps/search/?api=1&query=Ella%2C%20Sri%20Lanka';
     $idx_maps_embed = $__s['maps_embed_url'] ?? '';
     $idx_turnstile_enabled = ($__s['turnstile_enabled'] ?? '0') === '1';
     $idx_turnstile_site_key = trim((string)($__s['turnstile_site_key'] ?? ''));
     $idx_turnstile_active = $idx_turnstile_enabled && $idx_turnstile_site_key !== '';
     $idx_wa_url   = 'https://wa.me/' . preg_replace('/[^0-9]/', '', $idx_wa)
-                  . '?text=Hello%2C%20I%20am%20interested%20in%20booking%20We%20Trail%20(Pvt)%20Ltd.';
+                  . '?text=Hello%2C%20I%20am%20interested%20in%20booking%207%20Art%20Villa.';
 
     // Services preview (up to 6)
     $__home_services = $__pdo->query("SELECT * FROM services WHERE is_active=1 ORDER BY sort_order ASC, id ASC LIMIT 6")->fetchAll();
@@ -117,11 +117,11 @@ try {
         ['number'=>'24/7','label'=>'Butler Service'],
     ];
     $about_img_main = $about_img_accent = '';
-    $idx_phone = '+94777388810'; $idx_email = 'info@wetrail.lk';
-    $idx_wa = '94777388810'; $idx_facebook = $idx_instagram = $idx_youtube = '';
+    $idx_phone = '077 387 0850'; $idx_email = 'info@7artvilla.com';
+    $idx_wa = '94773870850'; $idx_facebook = $idx_instagram = $idx_youtube = '';
     $idx_tiktok = $idx_tripadvisor = $idx_twitter = '';
-    $idx_maps = 'https://www.google.com/maps/search/?api=1&query=Panama%2C%20Sri%20Lanka';
-    $idx_wa_url = 'https://wa.me/94777388810?text=Hello%2C%20I%20am%20interested%20in%20booking%20We%20Trail%20(Pvt)%20Ltd.';
+    $idx_maps = 'https://www.google.com/maps/search/?api=1&query=Ella%2C%20Sri%20Lanka';
+    $idx_wa_url = 'https://wa.me/94773870850?text=Hello%2C%20I%20am%20interested%20in%20booking%207%20Art%20Villa.';
     $idx_turnstile_enabled = false;
     $idx_turnstile_site_key = '';
     $idx_turnstile_active = false;
@@ -135,17 +135,17 @@ include 'includes/header.php';
     <section class="hero" id="home">
         <div class="hero-bg">
             <?php if ($hero_image && file_exists($hero_image)): ?>
-            <img src="<?php echo htmlspecialchars($hero_image); ?>" alt="We Trail (Pvt) Ltd" fetchpriority="high">
+            <img src="<?php echo htmlspecialchars($hero_image); ?>" alt="7 Art Villa" fetchpriority="high">
             <?php endif; ?>
         </div>
         <div class="hero-overlay"></div>
         <div class="hero-content">
-            <p class="hero-tagline">Panama, Sri Lanka</p>
-            <h1 class="hero-title">Where Nature Meets <span>Luxury</span></h1>
-            <p class="hero-subtitle">Immerse Yourself in the Essence of Sri Lanka with private stays, curated excursions, and the calm beauty of Panama Beach.</p>
+            <p class="hero-tagline">Ella, Sri Lanka</p>
+            <h1 class="hero-title">Breath of <span>Serenity</span></h1>
+            <p class="hero-subtitle">A peaceful eco villa where fresh mountain air, thoughtful comfort, and the natural beauty of Ella come together.</p>
             <div class="hero-actions">
                 <!-- <a href="villa.php" class="btn btn-gold">Explore Our Villas</a> -->
-                <a href="villa.php?slug=wetrail" class="btn btn-gold">Explore Our Villas</a>
+                <a href="villa.php" class="btn btn-gold">Explore Our Villa</a>
                 <a href="#contact" class="btn btn-outline">Make an Inquiry</a>
             </div>
         </div>
@@ -161,7 +161,7 @@ include 'includes/header.php';
             <div class="highlight-item"><i class="fas fa-user-tie"></i><span>Butler Service</span></div>
             <div class="highlight-item"><i class="fas fa-heart"></i><span>Family Retreat</span></div>
             <div class="highlight-item"><i class="fas fa-leaf"></i><span>Eco Friendly</span></div>
-            <div class="highlight-item"><i class="fas fa-mountain"></i><span>Near Panama Beach</span></div>
+            <div class="highlight-item"><i class="fas fa-mountain"></i><span>In Scenic Ella</span></div>
         </div>
     </section>
 
@@ -199,7 +199,7 @@ include 'includes/header.php';
                         <?php endforeach; ?>
                     </div>
                     <!-- <a href="villa.php" class="btn btn-gold">Discover Our Villas</a> -->
-                    <a href="villa.php?slug=wetrail" class="btn btn-gold">Discover Our Villas</a>
+                    <a href="villa.php" class="btn btn-gold">Discover Our Villa</a>
                 </div>
             </div>
         </div>
@@ -254,7 +254,7 @@ include 'includes/header.php';
             </div>
             <div class="center mt-40">
                 <!-- <a href="villa.php" class="btn btn-gold">View All Stays</a> -->
-                <a href="villa.php?slug=wetrail" class="btn btn-gold">View All Stays</a>
+                <a href="villa.php" class="btn btn-gold">View All Stays</a>
             </div>
         </div>
     </section>
@@ -279,7 +279,7 @@ include 'includes/header.php';
                 <?php else: ?>
                     <div class="service-card"><div class="service-icon"><i class="fas fa-concierge-bell"></i></div><h3>Butler Service</h3><p>A dedicated host helps with every detail, from room setup to tailored arrangements for your stay.</p></div>
                     <div class="service-card"><div class="service-icon"><i class="fas fa-utensils"></i></div><h3>Private Dining</h3><p>Enjoy authentic Sri Lankan and international cuisine, prepared fresh and served privately in your villa.</p></div>
-                    <div class="service-card"><div class="service-icon"><i class="fas fa-map-marked-alt"></i></div><h3>Tour Assistance</h3><p>Curated local excursions and transport arrangements to help you explore Panama and beyond with ease.</p></div>
+                    <div class="service-card"><div class="service-icon"><i class="fas fa-map-marked-alt"></i></div><h3>Tour Assistance</h3><p>Curated local excursions and transport arrangements to help you explore Ella and beyond with ease.</p></div>
                     <div class="service-card"><div class="service-icon"><i class="fas fa-car"></i></div><h3>Airport Transfer</h3><p>Comfortable and reliable private transfers arranged from and to the airport at your convenience.</p></div>
                     <div class="service-card"><div class="service-icon"><i class="fas fa-fire"></i></div><h3>Campfire Experience</h3><p>A cozy bonfire setup under the stars, perfect for slow evenings and memorable conversations.</p></div>
                     <div class="service-card"><div class="service-icon"><i class="fas fa-camera"></i></div><h3>Photography Session</h3><p>Capture your memories with a professional photography session amidst the stunning natural scenery.</p></div>
@@ -297,7 +297,7 @@ include 'includes/header.php';
             <div class="section-header center">
                 <p class="section-label">Explore the Region</p>
                 <h2 class="section-title">Tour Packages</h2>
-                <p class="section-desc">Discover handpicked Sri Lankan adventures arranged by the We Trail team.</p>
+                <p class="section-desc">Discover handpicked Sri Lankan adventures arranged by the 7 Art Villa team.</p>
             </div>
             <?php
             $__cat_label = ['half-day'=>'Half Day','full-day'=>'Full Day','sunrise'=>'Sunrise'];
@@ -326,7 +326,7 @@ include 'includes/header.php';
                     </div>
                     <div class="tour-card">
                         <div class="tour-image img-placeholder dark small"><div class="placeholder-label"><i class="fas fa-image"></i></div></div>
-                        <div class="tour-content"><span class="tour-badge">Full Day</span><h3>Waterfall Discovery Tour</h3><p>Explore multiple hidden waterfalls in the Panama and Haputale region with a private guide.</p><a href="tours.php" class="tour-link">Explore <i class="fas fa-arrow-right"></i></a></div>
+                        <div class="tour-content"><span class="tour-badge">Full Day</span><h3>Waterfall Discovery Tour</h3><p>Explore hidden waterfalls around Ella and the Haputale region with a private guide.</p><a href="tours.php" class="tour-link">Explore <i class="fas fa-arrow-right"></i></a></div>
                     </div>
                     <div class="tour-card">
                         <div class="tour-image img-placeholder dark small"><div class="placeholder-label"><i class="fas fa-image"></i></div></div>
@@ -373,7 +373,7 @@ include 'includes/header.php';
                 <?php else: ?>
                     <div class="tour-card home-destination-card">
                         <div class="tour-image img-placeholder dark small"><div class="placeholder-label"><i class="fas fa-map-marked-alt"></i></div></div>
-                        <div class="tour-content"><span class="tour-badge">Destination</span><h3>Destinations Coming Soon</h3><p>We are preparing curated destination guides around Panama for your next adventure.</p><a href="destinations.php" class="tour-link">Explore <i class="fas fa-arrow-right"></i></a></div>
+                        <div class="tour-content"><span class="tour-badge">Destination</span><h3>Destinations Coming Soon</h3><p>We are preparing curated destination guides around Ella for your next adventure.</p><a href="destinations.php" class="tour-link">Explore <i class="fas fa-arrow-right"></i></a></div>
                     </div>
                 <?php endif; ?>
             </div>
@@ -389,13 +389,13 @@ include 'includes/header.php';
             <div class="section-header center">
                 <p class="section-label">Visual Journey</p>
                 <h2 class="section-title">Gallery</h2>
-                <p class="section-desc">A glimpse into the We Trail experience.</p>
+                <p class="section-desc">A glimpse into the 7 Art Villa experience.</p>
             </div>
             <?php if (!empty($__home_gallery)): ?>
             <div class="gallery-home-grid">
                 <?php foreach ($__home_gallery as $__gi):
                     $__gi_src = ($__gi['image_path'] && file_exists($__gi['image_path'])) ? htmlspecialchars($__gi['image_path']) : null;
-                    $__gi_alt = htmlspecialchars($__gi['caption'] ?: 'We Trail (Pvt) Ltd');
+                    $__gi_alt = htmlspecialchars($__gi['caption'] ?: '7 Art Villa');
                 ?>
                 <div class="gallery-item"<?php echo $__gi_src ? ' data-src="'.$__gi_src.'"' : ''; ?>>
                     <?php if ($__gi_src): ?>
@@ -441,7 +441,7 @@ include 'includes/header.php';
                 <div class="contact-info">
                     <div class="contact-info-item"><div class="contact-icon"><i class="fas fa-phone"></i></div><div><h4>Phone</h4><a href="tel:<?php echo preg_replace('/\s+/','',$idx_phone); ?>"><?php echo htmlspecialchars($idx_phone); ?></a></div></div>
                     <div class="contact-info-item"><div class="contact-icon"><i class="fas fa-envelope"></i></div><div><h4>Email</h4><a href="mailto:<?php echo htmlspecialchars($idx_email); ?>"><?php echo htmlspecialchars($idx_email); ?></a></div></div>
-                    <div class="contact-info-item"><div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div><div><h4>Location</h4><a href="<?php echo htmlspecialchars($idx_maps); ?>" target="_blank" rel="noopener">Panama, Sri Lanka</a></div></div>
+                    <div class="contact-info-item"><div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div><div><h4>Location</h4><a href="<?php echo htmlspecialchars($idx_maps); ?>" target="_blank" rel="noopener">Ella, Sri Lanka</a></div></div>
                     <div class="contact-social">
                         <?php if ($idx_facebook):   ?><a href="<?php echo htmlspecialchars($idx_facebook); ?>"    target="_blank" rel="noopener" class="social-btn facebook"    aria-label="Facebook"><i class="fab fa-facebook-f"></i></a><?php endif; ?>
                         <?php if ($idx_instagram):  ?><a href="<?php echo htmlspecialchars($idx_instagram); ?>"   target="_blank" rel="noopener" class="social-btn instagram"  aria-label="Instagram"><i class="fab fa-instagram"></i></a><?php endif; ?>
@@ -456,7 +456,7 @@ include 'includes/header.php';
                         <iframe src="<?php echo htmlspecialchars($idx_maps_embed); ?>"
                                 width="100%" style="border:0;height:220px;" allowfullscreen=""
                                 loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-                                title="We Trail (Pvt) Ltd Location"></iframe>
+                                title="7 Art Villa Location"></iframe>
                         <a href="<?php echo htmlspecialchars($idx_maps); ?>" target="_blank" rel="noopener" class="contact-map-link">
                             <i class="fas fa-directions"></i> Get Directions
                         </a>

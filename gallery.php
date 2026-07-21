@@ -1,10 +1,10 @@
 <?php
-$page_title       = 'Gallery | We Trail (Pvt) Ltd';
-$page_description = 'Browse photos of We Trail (Pvt) Ltd - the villa, private pool, highland views, nature, and dining experiences in Panama, Sri Lanka.';
-$og_title         = 'Gallery | We Trail (Pvt) Ltd';
-$og_description   = 'Browse photos of We Trail (Pvt) Ltd - the villa, private pool, highland views, nature, and dining experiences in Panama, Sri Lanka.';
-$og_url           = 'https://wetrail.lk/gallery.php';
-$og_image         = 'https://wetrail.lk/assets/images/gallery/hero-bg.jpg';
+$page_title       = 'Gallery | 7 Art Villa';
+$page_description = 'Browse photos of 7 Art Villa, our eco villa, mountain views, nature, and memorable stays in Ella, Sri Lanka.';
+$og_title         = 'Gallery | 7 Art Villa';
+$og_description   = 'Browse photos of 7 Art Villa, our eco villa, mountain views, nature, and memorable stays in Ella, Sri Lanka.';
+$og_url           = 'https://7artvilla.com/gallery.php';
+$og_image         = 'https://7artvilla.com/assets/images/gallery/hero-bg.jpg';
 $page_css         = 'gallery.css';
 $page_js          = 'gallery.js';
 $nav_base         = 'index.php';
@@ -50,7 +50,7 @@ include 'includes/header.php';
     <!-- PAGE HERO -->
     <section class="gallery-hero" id="galleryHero">
         <div class="gallery-hero-bg">
-            <img src="assets/images/gallery/hero-bg.jpg" alt="We Trail (Pvt) Ltd Gallery" fetchpriority="high">
+            <img src="assets/images/gallery/hero-bg.jpg" alt="7 Art Villa Gallery" fetchpriority="high">
         </div>
         <div class="gallery-hero-overlay"></div>
         <div class="container">
@@ -60,7 +60,7 @@ include 'includes/header.php';
                 </a>
                 <p class="section-label">Visual Journey</p>
                 <h1>Our <span>Gallery</span></h1>
-                <p class="gallery-hero-sub">A collection of moments from We Trail (Pvt) Ltd - the villa, the pool, the highlands, and the experiences that make every stay unforgettable.</p>
+                <p class="gallery-hero-sub">A collection of moments from 7 Art Villa - peaceful spaces, Ella's highlands, and experiences that make every stay unforgettable.</p>
                 <div class="gallery-hero-stats">
                     <div class="hero-stat">
                         <span class="hero-stat-num"><?php echo count($__active_cats); ?></span>

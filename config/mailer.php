@@ -27,8 +27,8 @@ function send_mail(
         }
     }
 
-    $from_email = $cfg['smtp_from_email'] ?? 'noreply@wetrail.lk';
-    $from_name  = $cfg['smtp_from_name']  ?? 'We Trail (Pvt) Ltd';
+    $from_email = $cfg['smtp_from_email'] ?? 'noreply@7artvilla.com';
+    $from_name  = $cfg['smtp_from_name']  ?? '7 Art Villa';
     $text_body  = $text_body ?: strip_tags(str_replace(['<br>', '<br/>', '<br />', '</p>'], "\n", $html_body));
 
     if (!empty($cfg['smtp_host'])) {
@@ -52,7 +52,7 @@ function _php_mail(
     $headers .= "Reply-To: {$from_email}\r\n";
     $headers .= "MIME-Version: 1.0\r\n";
     $headers .= "Content-Type: multipart/alternative; boundary=\"{$boundary}\"\r\n";
-    $headers .= "X-Mailer: WeTrail/1.0\r\n";
+    $headers .= "X-Mailer: 7ArtVilla/1.0\r\n";
 
     $body  = "--{$boundary}\r\nContent-Type: text/plain; charset=UTF-8\r\n\r\n{$text}\r\n";
     $body .= "--{$boundary}\r\nContent-Type: text/html; charset=UTF-8\r\n\r\n{$html}\r\n";
@@ -145,7 +145,7 @@ function _smtp_send(
     $msg .= "Date: " . date('r') . "\r\n";
     $msg .= "MIME-Version: 1.0\r\n";
     $msg .= "Content-Type: multipart/alternative; boundary=\"{$boundary}\"\r\n";
-    $msg .= "X-Mailer: WeTrail/1.0\r\n\r\n";
+    $msg .= "X-Mailer: 7ArtVilla/1.0\r\n\r\n";
     $msg .= "--{$boundary}\r\nContent-Type: text/plain; charset=UTF-8\r\n\r\n{$text}\r\n";
     $msg .= "--{$boundary}\r\nContent-Type: text/html; charset=UTF-8\r\n\r\n{$html}\r\n";
     $msg .= "--{$boundary}--\r\n";

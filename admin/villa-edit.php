@@ -257,7 +257,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?php echo $is_edit ? 'Edit Villa' : 'Add Villa'; ?> | We Trail Admin</title>
+    <title><?php echo $is_edit ? 'Edit Villa' : 'Add Villa'; ?> | 7 Art Villa Admin</title>
     <meta name="robots" content="noindex, nofollow">
     <link rel="icon" type="image/png" href="../assets/images/logo.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -300,7 +300,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         <div class="form-grid-2" style="margin-top:20px">
                             <div class="form-group"><label>Villa Name *</label><input type="text" name="name" value="<?php echo htmlspecialchars((string)$villa['name']); ?>" required></div>
                             <div class="form-group"><label>Slug</label><input type="text" name="slug" value="<?php echo htmlspecialchars((string)$villa['slug']); ?>" placeholder="auto-generated-if-empty"></div>
-                            <div class="form-group"><label>Location Label</label><input type="text" name="location_label" value="<?php echo htmlspecialchars((string)$villa['location_label']); ?>" placeholder="e.g. Panama, Sri Lanka"></div>
+                            <div class="form-group"><label>Location Label</label><input type="text" name="location_label" value="<?php echo htmlspecialchars((string)$villa['location_label']); ?>" placeholder="e.g. Ella, Sri Lanka"></div>
                             <div class="form-group"><label>Tagline</label><input type="text" name="tagline" value="<?php echo htmlspecialchars((string)$villa['tagline']); ?>"></div>
                             <div class="form-group form-full"><label>Short Description</label><textarea name="short_description" rows="3"><?php echo htmlspecialchars((string)$villa['short_description']); ?></textarea></div>
                             <div class="form-group form-full"><label>Full Description *</label><textarea name="description" rows="8" required><?php echo htmlspecialchars((string)$villa['description']); ?></textarea></div>

@@ -412,12 +412,12 @@ h1, h2, h3, h4 {
 }
 
 .nav-logo img {
-    height: 56px;
+    height: 72px;
     width: auto;
     transition: height 0.4s ease;
     filter: drop-shadow(0 2px 8px rgba(0,0,0,0.4));
 }
-.navbar.scrolled .nav-logo img { height: 44px; }
+.navbar.scrolled .nav-logo img { height: 54px; }
 
 .nav-menu {
     display: flex;
@@ -1640,7 +1640,7 @@ h1, h2, h3, h4 {
 
 /* Brand */
 .footer-logo {
-    height: 64px;
+    height: 88px;
     width: auto;
     margin-bottom: 18px;
     filter: drop-shadow(0 2px 8px rgba(0,0,0,0.5));
@@ -2234,7 +2234,7 @@ h1, h2, h3, h4 {
     .btn { padding: 12px 24px; font-size: 0.82rem; }
 
     .footer-grid { gap: 24px; }
-    .footer-logo { height: 52px; }
+    .footer-logo { height: 72px; }
 }
 
 /* RESPONSIVE — 360px (Very Small) */

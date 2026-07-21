@@ -89,10 +89,10 @@ if ($is_tour_inquiry) {
 }
 
 // Build WhatsApp & email links
-$wa_msg  = urlencode("Hello {$inq['first_name']}, thank you for your inquiry about We Trail (Pvt) Ltd. We would be happy to assist you.");
+$wa_msg  = urlencode("Hello {$inq['first_name']}, thank you for your inquiry about 7 Art Villa. We would be happy to assist you.");
 $wa_link = "https://wa.me/{$inq['phone']}?text={$wa_msg}";
-$mail_subject = urlencode("Re: Your Inquiry - We Trail (Pvt) Ltd");
-$mail_body    = urlencode("Dear {$inq['first_name']},\n\nThank you for reaching out to us.\n\nBest regards,\nWe Trail (Pvt) Ltd");
+$mail_subject = urlencode("Re: Your Inquiry - 7 Art Villa");
+$mail_body    = urlencode("Dear {$inq['first_name']},\n\nThank you for reaching out to us.\n\nBest regards,\n7 Art Villa");
 $mail_link = "mailto:{$inq['email']}?subject={$mail_subject}&body={$mail_body}";
 ?>
 <!DOCTYPE html>
@@ -100,7 +100,7 @@ $mail_link = "mailto:{$inq['email']}?subject={$mail_subject}&body={$mail_body}";
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inquiry #<?php echo $id; ?> | We Trail Admin</title>
+    <title>Inquiry #<?php echo $id; ?> | 7 Art Villa Admin</title>
     <meta name="robots" content="noindex, nofollow">
     <link rel="icon" type="image/png" href="../assets/images/logo.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">

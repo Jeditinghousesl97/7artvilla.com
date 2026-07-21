@@ -12,4 +12,4 @@ Disallow: /config/
 Disallow: /includes/
 
 # Sitemap location
-Sitemap: https://wetrail.lk/sitemap.xml
+Sitemap: https://7artvilla.com/sitemap.xml

@@ -1,10 +1,10 @@
 ﻿<?php
-$page_title       = 'Tour Packages | We Trail (Pvt) Ltd';
-$page_description = 'Explore Panama and the surrounding region with guided tour packages from We Trail (Pvt) Ltd - waterfalls, tea estates, sunrises, and more.';
-$og_title         = 'Tour Packages | We Trail (Pvt) Ltd';
-$og_description   = 'Explore Panama and the surrounding region with guided tour packages - waterfalls, tea estates, sunrises, and more.';
-$og_url           = 'https://wetrail.lk/tours.php';
-$og_image         = 'https://wetrail.lk/assets/images/tours/hero-bg.jpg';
+$page_title       = 'Tour Packages | 7 Art Villa';
+$page_description = 'Explore Ella and the surrounding highlands with guided tour packages from 7 Art Villa - waterfalls, tea estates, sunrises, and more.';
+$og_title         = 'Tour Packages | 7 Art Villa';
+$og_description   = 'Explore Ella and the surrounding highlands with guided tour packages - waterfalls, tea estates, sunrises, and more.';
+$og_url           = 'https://7artvilla.com/tours.php';
+$og_image         = 'https://7artvilla.com/assets/images/tours/hero-bg.jpg';
 $page_css         = 'tours.css';
 $page_js          = 'tours.js';
 $nav_base         = 'index.php';
@@ -71,7 +71,7 @@ include 'includes/header.php';
     <!-- PAGE HERO -->
     <section class="tours-hero" id="toursHero">
         <div class="tours-hero-bg">
-            <img src="assets/images/tours/hero-bg.jpg" alt="We Trail (Pvt) Ltd Tours" fetchpriority="high">
+            <img src="assets/images/tours/hero-bg.jpg" alt="7 Art Villa Tours" fetchpriority="high">
         </div>
         <div class="tours-hero-overlay"></div>
         <div class="container">
@@ -81,7 +81,7 @@ include 'includes/header.php';
                 </a>
                 <p class="section-label">Explore the Region</p>
                 <h1>Tour <span>Packages</span></h1>
-                <p class="tours-hero-sub">Step beyond the villa and discover the breathtaking landscapes of Panama - cascading waterfalls, misty tea estates, ancient villages, and unforgettable sunrises await just outside your door.</p>
+                <p class="tours-hero-sub">Step beyond the villa and discover the breathtaking landscapes of Ella - cascading waterfalls, misty tea estates, mountain villages, and unforgettable sunrises await just outside your door.</p>
                 <div class="tours-hero-stats">
                     <div class="hero-stat">
                         <span class="hero-stat-num"><?php echo $__tour_total > 0 ? $__tour_total . '+' : '6+'; ?></span>
@@ -113,7 +113,7 @@ include 'includes/header.php';
                 <div class="tours-intro-text reveal-el from-left">
                     <p class="section-label">Why Tour With Us</p>
                     <h2 class="section-title">Private Adventures, Crafted for You</h2>
-                    <p>Nestled at the heart of Sri Lanka's most stunning highland region, We Trail is your perfect base for exploration. Every tour we offer is <strong>fully private</strong> - designed exclusively for our guests, led by knowledgeable local guides, and tailored around your pace and interests.</p>
+                    <p>Nestled in one of Sri Lanka's most beautiful highland regions, 7 Art Villa is your peaceful base for exploration. Every tour we offer is <strong>fully private</strong> - designed for our guests, led by knowledgeable local guides, and tailored around your pace and interests.</p>
                     <p>Whether you crave the adrenaline of a challenging waterfall hike or the calm of sipping highland tea at sunrise, we have an experience that speaks to you.</p>
                     <a href="#toursGrid" class="btn btn-green mt-20 smooth-scroll">
                         <i class="fas fa-compass"></i> View All Packages
@@ -131,7 +131,7 @@ include 'includes/header.php';
                         <div class="pillar-icon"><i class="fas fa-map-marked-alt"></i></div>
                         <div class="pillar-body">
                             <h4>Expert Local Guides</h4>
-                            <p>Our guides know every trail, viewpoint, and hidden gem in the Panama highlands.</p>
+                            <p>Our guides know the trails, viewpoints, and hidden gems around the Ella highlands.</p>
                         </div>
                     </div>
                     <div class="pillar-item">
@@ -320,10 +320,10 @@ include 'includes/header.php';
                             <div class="tour-card-icon"><i class="fas fa-tint"></i></div>
                             <div>
                                 <h3>Waterfall Discovery Tour</h3>
-                                <p class="tour-card-tagline">Chase hidden cascades through the Panama and Haputale highlands.</p>
+                                <p class="tour-card-tagline">Chase hidden cascades through the Ella and Haputale highlands.</p>
                             </div>
                         </div>
-                        <p class="tour-card-desc">A full-day adventure visiting multiple hidden waterfalls tucked deep within the highland forests of Panama and Haputale. Your private guide will take you off the beaten path to discover cascades rarely seen by visitors - each one more magical than the last.</p>
+                        <p class="tour-card-desc">A full-day adventure visiting hidden waterfalls tucked deep within the highland forests around Ella and Haputale. Your private guide will take you off the beaten path to discover beautiful cascades away from the crowds.</p>
                         <ul class="tour-highlights">
                             <li><i class="fas fa-check-circle"></i> Visit 3-5 hidden waterfalls</li>
                             <li><i class="fas fa-check-circle"></i> Forest trail hiking</li>
@@ -374,7 +374,7 @@ include 'includes/header.php';
                                 <p class="tour-card-tagline">From leaf to cup - an intimate journey through Sri Lanka's tea culture.</p>
                             </div>
                         </div>
-                        <p class="tour-card-desc">Visit a scenic highland tea estate nestled in the rolling hills above Panama. Watch tea pluckers at work, learn the art of tea production from bush to cup, and sit down to a private tasting of freshly brewed single-estate Ceylon teas with local snacks.</p>
+                        <p class="tour-card-desc">Visit a scenic highland tea estate nestled in the rolling hills around Ella. Watch tea pluckers at work, learn the art of tea production from bush to cup, and enjoy a tasting of freshly brewed Ceylon teas with local snacks.</p>
                         <ul class="tour-highlights">
                             <li><i class="fas fa-check-circle"></i> Guided estate walkthrough</li>
                             <li><i class="fas fa-check-circle"></i> Tea factory tour</li>
@@ -426,7 +426,7 @@ include 'includes/header.php';
                                 <p class="tour-card-tagline">Watch the mist lift over the highland valleys as day breaks.</p>
                             </div>
                         </div>
-                        <p class="tour-card-desc">Rise before dawn and trek to one of Panama's most spectacular viewpoints in time for sunrise. As the first golden light spills across the valley, you'll witness a panoramic view of misty mountains, waterfalls, and endless green that will stay with you forever. Hot tea served at the summit.</p>
+                        <p class="tour-card-desc">Rise before dawn and trek to one of Ella's spectacular viewpoints in time for sunrise. As the first golden light spills across the valley, take in panoramic views of misty mountains, waterfalls, and endless green. Hot tea is served at the summit.</p>
                         <ul class="tour-highlights">
                             <li><i class="fas fa-check-circle"></i> Pre-dawn departure (5:00 AM)</li>
                             <li><i class="fas fa-check-circle"></i> 360 degrees highland viewpoint</li>
@@ -525,10 +525,10 @@ include 'includes/header.php';
                             <div class="tour-card-icon"><i class="fas fa-home"></i></div>
                             <div>
                                 <h3>Village &amp; Culture Walk</h3>
-                                <p class="tour-card-tagline">A slow, soulful walk through the heart of Panama village life.</p>
+                                <p class="tour-card-tagline">A slow, soulful walk through the heart of Ella's village life.</p>
                             </div>
                         </div>
-                        <p class="tour-card-desc">Discover the warmth and simplicity of rural Sri Lankan life on a gentle walk through the villages surrounding We Trail. Meet local families, visit a temple, watch traditional crafts, and enjoy a homemade Sri Lankan breakfast prepared by a local family.</p>
+                        <p class="tour-card-desc">Discover the warmth and simplicity of rural Sri Lankan life on a gentle walk through villages surrounding 7 Art Villa. Meet local families, visit a temple, watch traditional crafts, and enjoy a homemade Sri Lankan breakfast.</p>
                         <ul class="tour-highlights">
                             <li><i class="fas fa-check-circle"></i> Village temple visit</li>
                             <li><i class="fas fa-check-circle"></i> Traditional craft workshop</li>
@@ -744,8 +744,8 @@ include 'includes/header.php';
                     <a href="index.php#contact" class="btn btn-gold">
                         <i class="fas fa-paper-plane"></i> Send an Inquiry
                     </a>
-                    <a href="tel:+94777388810" class="btn btn-outline">
-                        <i class="fas fa-phone"></i> +94 777 388810
+                    <a href="tel:+94773870850" class="btn btn-outline">
+                        <i class="fas fa-phone"></i> 077 387 0850
                     </a>
                 </div>
             </div>

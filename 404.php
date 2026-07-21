@@ -3,7 +3,7 @@ http_response_code(404);
 require_once __DIR__ . '/config/theme.php';
 
 // Pull contact info for the WhatsApp / contact link
-$_404_wa = '94777388810';
+$_404_wa = '94773870850';
 $_404_theme = site_theme_defaults();
 try {
     require_once __DIR__ . '/config/db.php';
@@ -20,7 +20,7 @@ try {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page Not Found | We Trail (Pvt) Ltd</title>
+    <title>Page Not Found | 7 Art Villa</title>
     <meta name="robots" content="noindex, nofollow">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/images/logo.png">
     <link rel="apple-touch-icon" sizes="180x180" href="assets/images/logo.png">
@@ -59,7 +59,8 @@ try {
             max-width: 580px;
         }
         .error-logo {
-            height: 60px;
+            height: 90px;
+            width: auto;
             margin-bottom: 48px;
             opacity: 0;
             animation: fadeInDown 0.7s ease 0.2s forwards;
@@ -148,7 +149,7 @@ try {
         <div class="error-content">
 
             <a href="index.php">
-                <img src="assets/images/logo.png" alt="We Trail (Pvt) Ltd" class="error-logo">
+                <img src="assets/images/logo.png" alt="7 Art Villa" class="error-logo">
             </a>
 
             <div class="error-number">404</div>

@@ -144,7 +144,7 @@ try {
     $s = $stmt->fetchAll(PDO::FETCH_KEY_PAIR);
 
     $notify_email = $s['smtp_notify_email'] ?? $s['email'] ?? '';
-    $resort_name  = $s['smtp_from_name'] ?? 'We Trail (Pvt) Ltd';
+    $resort_name  = $s['smtp_from_name'] ?? '7 Art Villa';
 
     // 1. Admin notification email 
     $admin_mail_sent = true;
@@ -197,7 +197,7 @@ try {
     <div style='font-family:sans-serif;max-width:600px;margin:0 auto'>
         <div style='background:#111;padding:24px 28px;border-radius:10px 10px 0 0;text-align:center'>
             <h2 style='color:#C8961E;margin:0;font-size:1.3rem'>{$resort_name}</h2>
-            <p style='color:rgba(255,255,255,0.4);margin:4px 0 0;font-size:0.8rem'>Panama, Sri Lanka</p>
+            <p style='color:rgba(255,255,255,0.4);margin:4px 0 0;font-size:0.8rem'>Ella, Sri Lanka</p>
         </div>
         <div style='background:#1a1a1a;padding:32px 28px;border-radius:0 0 10px 10px;border:1px solid rgba(255,255,255,0.07)'>
             <p style='color:#f0ebe0;font-size:1rem'>Dear " . htmlspecialchars($first_name) . ",</p>
@@ -208,10 +208,10 @@ try {
                 <p style='color:rgba(240,235,224,0.65);margin:0;line-height:1.6;font-size:0.9rem'>" . nl2br(htmlspecialchars($message)) . "</p>
             </div>
             <p style='color:rgba(240,235,224,0.75);line-height:1.7'>If you need to reach us urgently, please don't hesitate to contact us directly:</p>
-            <p style='color:rgba(240,235,224,0.75)'>Phone: <a href='tel:+94777388810' style='color:#C8961E'>+94 777 388810</a></p>
-            <p style='color:rgba(240,235,224,0.75)'>WhatsApp: <a href='https://wa.me/94777388810' style='color:#C8961E'>+94 777 388810</a></p>
+            <p style='color:rgba(240,235,224,0.75)'>Phone: <a href='tel:+94773870850' style='color:#C8961E'>077 387 0850</a></p>
+            <p style='color:rgba(240,235,224,0.75)'>WhatsApp: <a href='https://wa.me/94773870850' style='color:#C8961E'>077 387 0850</a></p>
             <hr style='border:none;border-top:1px solid rgba(255,255,255,0.07);margin:24px 0'>
-            <p style='color:rgba(240,235,224,0.4);font-size:0.75rem;text-align:center'>We Trail (Pvt) Ltd - Panama, Sri Lanka</p>
+            <p style='color:rgba(240,235,224,0.4);font-size:0.75rem;text-align:center'>7 Art Villa - Ella, Sri Lanka</p>
         </div>
     </div>";
 

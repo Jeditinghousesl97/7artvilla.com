@@ -141,7 +141,7 @@ button { cursor: pointer; font-family: var(--font-body); }
 }
 
 .login-logo img {
-    height: 52px;
+    height: 64px;
     width: auto;
     flex-shrink: 0;
 }
@@ -393,7 +393,7 @@ button { cursor: pointer; font-family: var(--font-body); }
     flex-shrink: 0;
 }
 
-.sidebar-logo img { height: 40px; width: auto; }
+.sidebar-logo img { height: 48px; width: auto; }
 
 .sidebar-logo-text {
     display: flex;

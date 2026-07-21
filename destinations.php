@@ -1,10 +1,10 @@
 <?php
-$page_title = 'Destinations | We Trail (Pvt) Ltd';
+$page_title = 'Destinations | 7 Art Villa';
 $page_description = 'Explore nearby destinations from our villa with travel time, distance, map references, and activity ideas.';
-$og_title = 'Destinations | We Trail (Pvt) Ltd';
+$og_title = 'Destinations | 7 Art Villa';
 $og_description = $page_description;
-$og_url = 'https://wetrail.lk/destinations.php';
-$og_image = 'https://wetrail.lk/assets/images/villa/destiheader.jpg';
+$og_url = 'https://7artvilla.com/destinations.php';
+$og_image = 'https://7artvilla.com/assets/images/villa/destiheader.jpg';
 $page_css = 'destinations.css';
 $page_js = 'destinations.js';
 $nav_base = 'index.php';
@@ -71,7 +71,7 @@ include 'includes/header.php';
 ?>
 <section class="dest-hero">
     <div class="dest-hero-bg">
-        <img src="assets/images/villa/destiheader.jpg" alt="Nearby destinations from We Trail (Pvt) Ltd" fetchpriority="high">
+        <img src="assets/images/villa/destiheader.jpg" alt="Nearby destinations from 7 Art Villa" fetchpriority="high">
     </div>
     <div class="dest-hero-overlay"></div>
     <div class="container">
@@ -79,7 +79,7 @@ include 'includes/header.php';
             <a href="index.php" class="hero-back-link"><i class="fas fa-arrow-left"></i> Back to Home</a>
             <p class="section-label">Explore Nearby</p>
             <h1>Nearby <span>Destinations</span></h1>
-            <p class="dest-hero-sub">Handpicked places around Panama with route hints, travel details, and guest-friendly recommendations from our villa.</p>
+            <p class="dest-hero-sub">Handpicked places around Ella with route hints, travel details, and guest-friendly recommendations from our villa.</p>
             <div class="dest-hero-stats">
                 <div class="dest-hero-stat">
                     <span class="dest-hero-num"><?php echo $destination_total > 0 ? $destination_total . '+' : '0'; ?></span>

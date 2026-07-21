@@ -33,13 +33,13 @@ if ($requested_detail) {
 
     if ($villa) {
         $page_mode = 'detail';
-        $page_title = $villa['name'] . ' | We Trail (Pvt) Ltd';
+        $page_title = $villa['name'] . ' | 7 Art Villa';
         $desc_source = trim(strip_tags((string)$villa['description']));
         $page_description = $villa['short_description'] ?: (function_exists('mb_strimwidth') ? mb_strimwidth($desc_source, 0, 160, '...') : substr($desc_source, 0, 157) . (strlen($desc_source) > 157 ? '...' : ''));
         $og_title = $page_title;
         $og_description = $page_description;
-        $og_url = 'https://wetrail.lk/villa.php?slug=' . urlencode($villa['slug']);
-        $og_image = !empty($villa['featured_image_path']) ? ('https://wetrail.lk/' . ltrim($villa['featured_image_path'], '/')) : 'https://wetrail.lk/assets/images/logo.png';
+        $og_url = 'https://7artvilla.com/villa.php?slug=' . urlencode($villa['slug']);
+        $og_image = !empty($villa['featured_image_path']) ? ('https://7artvilla.com/' . ltrim($villa['featured_image_path'], '/')) : 'https://7artvilla.com/assets/images/logo.png';
 
         $space_stmt = $pdo->prepare('SELECT * FROM villa_spaces WHERE villa_id = ? AND is_active = 1 ORDER BY sort_order ASC, id ASC');
         $space_stmt->execute([$villa['id']]);
@@ -55,22 +55,22 @@ if ($requested_detail) {
         $page_mode = 'not_found';
         http_response_code(404);
         $page_robots = 'noindex, nofollow';
-        $page_title = 'Villa Not Found | We Trail (Pvt) Ltd';
+        $page_title = 'Villa Not Found | 7 Art Villa';
         $page_description = 'The requested villa could not be found.';
         $og_title = $page_title;
         $og_description = $page_description;
-        $og_url = 'https://wetrail.lk/villa.php' . ($slug !== '' ? ('?slug=' . urlencode($slug)) : ($id > 0 ? ('?id=' . $id) : ''));
-        $og_image = 'https://wetrail.lk/assets/images/logo.png';
+        $og_url = 'https://7artvilla.com/villa.php' . ($slug !== '' ? ('?slug=' . urlencode($slug)) : ($id > 0 ? ('?id=' . $id) : ''));
+        $og_image = 'https://7artvilla.com/assets/images/logo.png';
     }
 }
 
 if ($page_mode === 'listing') {
-    $page_title = 'Villas | We Trail (Pvt) Ltd';
-    $page_description = 'Explore villas, kabanas, and flexible stay options managed by We Trail (Pvt) Ltd.';
+    $page_title = 'Villa Stays | 7 Art Villa';
+    $page_description = 'Explore the eco-villa spaces and stay options available at 7 Art Villa in Ella, Sri Lanka.';
     $og_title = $page_title;
     $og_description = $page_description;
-    $og_url = 'https://wetrail.lk/villa.php';
-    $og_image = 'https://wetrail.lk/assets/images/logo.png';
+    $og_url = 'https://7artvilla.com/villa.php';
+    $og_image = 'https://7artvilla.com/assets/images/logo.png';
 
     $listing_spaces = $pdo->query("
         SELECT s.*,
@@ -101,7 +101,7 @@ function villa_word_excerpt(string $text, int $max_words = 28, string $trim = '.
 <?php if ($page_mode === 'listing'): ?>
 <section class="villa-list-hero">
     <div class="villa-list-hero-bg">
-        <img src="assets/images/villa/hero-bg.jpg" alt="We Trail Villas" fetchpriority="high">
+        <img src="assets/images/villa/hero-bg.jpg" alt="7 Art Villa stays" fetchpriority="high">
     </div>
     <div class="villa-hero-overlay"></div>
     <div class="villa-hero-content">

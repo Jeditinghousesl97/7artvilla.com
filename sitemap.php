@@ -1,10 +1,10 @@
 <?php
 
-//  Dynamic Sitemap â€” wetrail.lk
+//  Dynamic Sitemap - 7artvilla.com
 
 header('Content-Type: application/xml; charset=utf-8');
 
-define('SITE_ROOT', 'https://wetrail.lk');
+define('SITE_ROOT', 'https://7artvilla.com');
 
 // Pull latest updated_at from dynamic tables
 $tours_updated   = null;

@@ -67,7 +67,7 @@ if (!function_exists('svc_excerpt')) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services | We Trail Admin</title>
+    <title>Services | 7 Art Villa Admin</title>
     <meta name="robots" content="noindex, nofollow">
     <link rel="icon" type="image/png" href="../assets/images/logo.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">

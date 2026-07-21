@@ -91,12 +91,12 @@ if (!function_exists('tour_price_lines')) {
 $tour_price_lines = $tour ? tour_price_lines($tour) : [];
 $tour_hero_has_image = $tour && !empty($tour['image_path']) && file_exists($tour['image_path']);
 
-$page_title       = $tour ? ($tour['title'] . ' | Tour Package | We Trail (Pvt) Ltd') : 'Tour Not Found | We Trail (Pvt) Ltd';
+$page_title       = $tour ? ($tour['title'] . ' | Tour Package | 7 Art Villa') : 'Tour Not Found | 7 Art Villa';
 $page_description = $tour ? trim((string)($tour['tagline'] ?: $tour['description'])) : 'The requested tour package could not be found.';
 $og_title         = $page_title;
 $og_description   = $page_description;
-$og_url           = 'https://wetrail.lk/tour-details.php' . ($tour_id > 0 ? ('?id=' . $tour_id) : '');
-$og_image         = ($tour && !empty($tour['image_path'])) ? ('https://wetrail.lk/' . ltrim($tour['image_path'], '/')) : 'https://wetrail.lk/assets/images/villa/resort.jpg';
+$og_url           = 'https://7artvilla.com/tour-details.php' . ($tour_id > 0 ? ('?id=' . $tour_id) : '');
+$og_image         = ($tour && !empty($tour['image_path'])) ? ('https://7artvilla.com/' . ltrim($tour['image_path'], '/')) : 'https://7artvilla.com/assets/images/logo.png';
 $page_css         = 'tour-details.css';
 $page_js          = 'tour-details.js';
 $nav_base         = 'index.php';

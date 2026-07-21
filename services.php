@@ -1,10 +1,10 @@
 <?php
-$page_title       = 'Our Services | We Trail (Pvt) Ltd';
-$page_description = 'Discover the exclusive services at We Trail (Pvt) Ltd - butler service, private dining, celebrations, tours, and more.';
-$og_title         = 'Our Services | We Trail (Pvt) Ltd';
-$og_description   = 'Discover the exclusive services at We Trail (Pvt) Ltd - butler service, private dining, celebrations, tours, and more.';
-$og_url           = 'https://wetrail.lk/services.php';
-$og_image         = 'https://wetrail.lk/assets/images/services/hero-bg.jpg';
+$page_title       = 'Our Services | 7 Art Villa';
+$page_description = 'Discover the thoughtful services at 7 Art Villa in Ella, from dining and celebrations to tours and more.';
+$og_title         = 'Our Services | 7 Art Villa';
+$og_description   = 'Discover the thoughtful services at 7 Art Villa in Ella, from dining and celebrations to tours and more.';
+$og_url           = 'https://7artvilla.com/services.php';
+$og_image         = 'https://7artvilla.com/assets/images/services/hero-bg.jpg';
 $page_css         = 'services.css';
 $page_js          = 'services.js';
 $nav_base         = 'index.php';
@@ -33,7 +33,7 @@ include 'includes/header.php';
     <!-- PAGE HERO -->
     <section class="services-hero">
         <div class="services-hero-bg">
-            <img src="assets/images/services/hero-bg.jpg" alt="We Trail (Pvt) Ltd Services" fetchpriority="high">
+            <img src="assets/images/services/hero-bg.jpg" alt="7 Art Villa Services" fetchpriority="high">
         </div>
         <div class="services-hero-overlay"></div>
         <div class="container">
@@ -43,7 +43,7 @@ include 'includes/header.php';
                 </a>
                 <p class="section-label">Curated for You</p>
                 <h1>Our <span>Services</span></h1>
-                <p class="services-hero-sub">Every experience at We Trail is personal, unhurried, and delivered with genuine warmth - because true luxury is in the details.</p>
+                <p class="services-hero-sub">Every experience at 7 Art Villa is personal, unhurried, and delivered with genuine warmth - because true luxury is in the details.</p>
                 <div class="services-hero-stats">
                     <div class="hero-stat">
                         <span class="hero-stat-num">12+</span>
@@ -72,10 +72,10 @@ include 'includes/header.php';
         <div class="container">
             <div class="services-intro-grid">
                 <div class="services-intro-text">
-                    <p class="section-label">The We Trail Promise</p>
+                    <p class="section-label">The 7 Art Villa Promise</p>
                     <h2 class="section-title">Service as an Art Form</h2>
                     <p class="section-text" style="color:rgba(245,240,232,0.7)">
-                        At We Trail (Pvt) Ltd, service is not a transaction - it is an expression of hospitality. From the moment you arrive until the moment you depart, every detail is anticipated, every request attended to, every moment curated to exceed expectation.
+                        At 7 Art Villa, service is an expression of hospitality. From the moment you arrive until you depart, every detail is considered and every moment is shaped around a peaceful stay.
                     </p>
                     <p class="section-text" style="color:rgba(245,240,232,0.7)">
                         Your dedicated butler is your single point of contact for everything - day or night. Nothing is too small, nothing too large. Your comfort is our purpose.
@@ -504,8 +504,8 @@ include 'includes/header.php';
                     <a href="index.php#contact" class="btn btn-gold">
                         <i class="fas fa-paper-plane"></i> Send an Inquiry
                     </a>
-                    <a href="tel:+94777388810" class="btn btn-outline">
-                        <i class="fas fa-phone"></i> +94 777 388810
+                    <a href="tel:+94773870850" class="btn btn-outline">
+                        <i class="fas fa-phone"></i> 077 387 0850
                     </a>
                 </div>
             </div>

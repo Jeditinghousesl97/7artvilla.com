@@ -17,7 +17,7 @@ $stmt->execute();
 $s = $stmt->fetchAll(PDO::FETCH_KEY_PAIR);
 
 $to   = $s['smtp_notify_email'] ?? $s['email'] ?? '';
-$name = $s['smtp_from_name'] ?? 'We Trail (Pvt) Ltd';
+$name = $s['smtp_from_name'] ?? '7 Art Villa';
 
 if (!$to) {
     echo json_encode(['ok' => false, 'msg' => 'No notification email address configured. Set Admin Notification Email first.']);

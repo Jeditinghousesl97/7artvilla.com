@@ -444,7 +444,7 @@ if (!function_exists('stay_seed_legacy_data')) {
         $villa_stmt->execute([
             'Arugam Bay Villa',
             'arugam-bay-villa',
-            'Panama, Sri Lanka',
+            'Ella, Sri Lanka',
             $settings['about_label'] ?? 'Nature Beach Escape',
             $settings['about_paragraph1'] ?? '',
             trim((string)(($settings['about_paragraph1'] ?? '') . "\n\n" . ($settings['about_paragraph2'] ?? ''))),

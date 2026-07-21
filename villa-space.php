@@ -108,14 +108,14 @@ if ($space) {
     $space_showcase_gallery = $showcase_stmt->fetchAll(PDO::FETCH_ASSOC);
 }
 
-$page_title = $space ? ($space['name'] . ' | ' . $villa['name'] . ' | We Trail (Pvt) Ltd') : 'Villa Space Not Found | We Trail (Pvt) Ltd';
+$page_title = $space ? ($space['name'] . ' | ' . $villa['name'] . ' | 7 Art Villa') : 'Villa Space Not Found | 7 Art Villa';
 $page_description = $space
     ? trim((string)($space['short_description'] ?: $space['description']))
     : 'The requested villa space could not be found.';
 $og_title = $page_title;
 $og_description = $page_description;
-$og_url = 'https://wetrail.lk/villa-space.php' . ($space ? ('?villa=' . urlencode($villa['slug']) . '&space=' . urlencode($space['slug'])) : '');
-$og_image = ($space && !empty($space['featured_image_path'])) ? ('https://wetrail.lk/' . ltrim((string)$space['featured_image_path'], '/')) : 'https://wetrail.lk/assets/images/logo.png';
+$og_url = 'https://7artvilla.com/villa-space.php' . ($space ? ('?villa=' . urlencode($villa['slug']) . '&space=' . urlencode($space['slug'])) : '');
+$og_image = ($space && !empty($space['featured_image_path'])) ? ('https://7artvilla.com/' . ltrim((string)$space['featured_image_path'], '/')) : 'https://7artvilla.com/assets/images/logo.png';
 if (!$space) {
     http_response_code(404);
     $page_robots = 'noindex, nofollow';

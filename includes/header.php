@@ -25,7 +25,7 @@ if (!isset($__maintenance_checked)) {
     }
 }
 
-$__site_url = 'https://wetrail.lk';
+$__site_url = 'https://7artvilla.com';
 $__seo_logo_url = $__site_url . '/assets/images/logo.png';
 $__ga_id = '';
 $__fb_pixel_id = '';
@@ -96,16 +96,16 @@ if (empty($page_description) && $__site_desc) {
 
 $__request_path = strtok($_SERVER['REQUEST_URI'] ?? '/', '?') ?: '/';
 $__canonical_fallback = $__site_url . preg_replace('#/index\.php$#', '/', $__request_path);
-$__seo_title = $og_title ?? $page_title ?? 'We Trail (Pvt) Ltd | Panama, Sri Lanka';
+$__seo_title = $og_title ?? $page_title ?? '7 Art Villa | Ella, Sri Lanka';
 $__seo_description = $og_description ?? $page_description ?? '';
 $__seo_canonical = $canonical_url ?? ($og_url ?? $__canonical_fallback);
 $__seo_image = $og_image ?? $__seo_logo_url;
-$__seo_image_alt = $og_image_alt ?? 'We Trail (Pvt) Ltd logo';
+$__seo_image_alt = $og_image_alt ?? '7 Art Villa logo';
 $__seo_robots = $page_robots ?? 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1';
 $__seo_address = [
     '@type' => 'PostalAddress',
-    'addressLocality' => 'Panama',
-    'addressRegion' => 'Ampara',
+    'addressLocality' => 'Ella',
+    'addressRegion' => 'Uva Province',
     'addressCountry' => 'LK'
 ];
 
@@ -114,16 +114,16 @@ $__seo_graph = [
         '@type' => 'WebSite',
         '@id' => $__site_url . '/#website',
         'url' => $__site_url . '/',
-        'name' => 'We Trail (Pvt) Ltd',
+        'name' => '7 Art Villa',
         'description' => $__site_desc ?: ($page_description ?? ''),
-        'slogan' => 'Immerse Yourself in the Essence of Sri Lanka',
+        'slogan' => 'Breath of Serenity',
         'inLanguage' => 'en',
         'image' => $__seo_logo_url
     ],
     [
-        '@type' => 'TravelAgency',
+        '@type' => 'LodgingBusiness',
         '@id' => $__site_url . '/#business',
-        'name' => 'We Trail (Pvt) Ltd',
+        'name' => '7 Art Villa',
         'url' => $__site_url . '/',
         'logo' => $__seo_logo_url,
         'image' => $__seo_logo_url,
@@ -149,7 +149,7 @@ if (!empty($__seo_same_as)) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?php echo htmlspecialchars($page_title ?? 'We Trail (Pvt) Ltd | Panama, Sri Lanka'); ?></title>
+    <title><?php echo htmlspecialchars($page_title ?? '7 Art Villa | Ella, Sri Lanka'); ?></title>
     <meta name="description" content="<?php echo htmlspecialchars($page_description ?? ''); ?>">
     <meta name="robots" content="<?php echo htmlspecialchars($__seo_robots); ?>">
     <link rel="canonical" href="<?php echo htmlspecialchars($__seo_canonical); ?>">
@@ -157,7 +157,7 @@ if (!empty($__seo_same_as)) {
     <!-- Open Graph -->
     <meta property="og:type"         content="website">
     <meta property="og:locale"       content="en_LK">
-    <meta property="og:site_name"    content="We Trail (Pvt) Ltd">
+    <meta property="og:site_name"    content="7 Art Villa">
     <meta property="og:title"        content="<?php echo htmlspecialchars($__seo_title); ?>">
     <meta property="og:description"  content="<?php echo htmlspecialchars($__seo_description); ?>">
     <meta property="og:url"          content="<?php echo htmlspecialchars($__seo_canonical); ?>">
@@ -230,7 +230,7 @@ if (!empty($__seo_same_as)) {
     <nav class="navbar<?php if (!empty($navbar_class)) echo ' ' . htmlspecialchars($navbar_class); ?>" id="navbar">
         <div class="nav-container">
             <a href="<?php echo $home_href; ?>" class="nav-logo">
-                <img src="assets/images/logo.png" alt="We Trail (Pvt) Ltd Logo">
+                <img src="assets/images/logo.png" alt="7 Art Villa Logo">
             </a>
             <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
                 <span></span><span></span><span></span>
